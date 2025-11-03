@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Traffic Prediction</title>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🚗 Real-Time Traffic Prediction</h1>
+    <form id="predictForm">
+      <div class="grid">
+        <input type="number" step="any" name="Start_Lat" placeholder="Start Latitude" required />
+        <input type="number" step="any" name="Start_Lng" placeholder="Start Longitude" required />
+        <input type="number" step="any" name="Distance_mi" placeholder="Distance (mi)" required />
+        <input type="text" name="City" placeholder="City" required />
+        <input type="text" name="State" placeholder="State" required />
+        <input type="number" step="any" name="Temperature_F" placeholder="Temperature (°F)" required />
+        <input type="number" step="any" name="Humidity" placeholder="Humidity (%)" required />
+        <input type="number" step="any" name="Pressure" placeholder="Pressure (in)" required />
+        <input type="number" step="any" name="Visibility" placeholder="Visibility (mi)" required />
+        <input type="number" step="any" name="Wind_Speed" placeholder="Wind Speed (mph)" required />
+        <input type="text" name="Weather_Condition" placeholder="Weather Condition" required />
+        <input type="text" name="Sunrise_Sunset" placeholder="Sunrise or Sunset" required />
+        <input type="number" name="Traffic_Signal" placeholder="Traffic Signal (0/1)" required />
+        <input type="number" name="Hour" placeholder="Hour" required />
+        <input type="number" name="Month" placeholder="Month" required />
+        <input type="number" name="Year" placeholder="Year" required />
+      </div>
+      <button type="submit">Predict</button>
+    </form>
+
+    <div id="result" class="result-box"></div>
+  </div>
+
+  <script src="/static/script.js"></script>
+</body>
+</html>
